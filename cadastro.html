@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cadastro — Sorriso Solidário</title>
+  <meta name="description" content="Formulário de cadastro para voluntários, doadores e interessados na Sorriso Solidário." />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Navegação principal">
+      <a class="logo" href="/">Sorriso Solidário</a>
+      <ul class="nav-list">
+        <li><a href="/">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastre-se</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Cadastro de Voluntário / Doador</h1>
+
+    <form id="form-cadastro" action="#" method="post" novalidate>
+      <fieldset>
+        <legend>Dados pessoais</legend>
+
+        <label for="nome">Nome completo</label>
+        <input id="nome" name="nome" type="text" required minlength="3" placeholder="Ex.: Maria Silva">
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required placeholder="seu@exemplo.com">
+
+        <label for="cpf">CPF</label>
+        <input id="cpf" name="cpf" type="text" required inputmode="numeric" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
+
+        <label for="telefone">Telefone</label>
+        <input id="telefone" name="telefone" type="tel" required placeholder="(00) 00000-0000">
+
+        <label for="nascimento">Data de nascimento</label>
+        <input id="nascimento" name="nascimento" type="date" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+        <label for="cep">CEP</label>
+        <input id="cep" name="cep" type="text" required inputmode="numeric" pattern="\d{5}-?\d{3}" placeholder="00000-000">
+
+        <label for="endereco">Endereço</label>
+        <input id="endereco" name="endereco" type="text" required>
+
+        <label for="cidade">Cidade</label>
+        <input id="cidade" name="cidade" type="text" required>
+
+        <label for="estado">Estado</label>
+        <select id="estado" name="estado" required>
+          <option value="">Selecione</option>
+          <option value="SP">SP</option>
+          <option value="RJ">RJ</option>
+          <option value="MG">MG</option>
+          <!-- adicionar demais estados -->
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Interesses</legend>
+        <label><input type="checkbox" name="interesse" value="voluntariado"> Voluntariado</label>
+        <label><input type="checkbox" name="interesse" value="doacao"> Doações</label>
+        <label><input type="checkbox" name="interesse" value="newsletter"> Receber newsletter</label>
+      </fieldset>
+
+      <button type="submit" class="btn">Enviar cadastro</button>
+    </form>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year3"></span> Clínica Sorriso Solidário</p>
+  </footer>
+
+  <script src="js/validation.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
