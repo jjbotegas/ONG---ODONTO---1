@@ -1,0 +1,41 @@
+@import url("variables.css");
+
+/* Botões */
+.btn {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border:none;
+  padding: var(--space-2) var(--space-3);
+  border-radius:8px;
+  cursor:pointer;
+  transition:0.3s;
+  font-weight:500;
+}
+.btn:hover { background: var(--color-primary-light); }
+.btn:disabled { background: var(--color-gray); cursor:not-allowed; }
+
+/* Cards */
+.card {
+  background: var(--color-white);
+  border-radius:12px;
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
+  padding: var(--space-3);
+  transition:0.3s;
+}
+.card:hover { transform: translateY(-4px); }
+
+/* Tags */
+.tag {
+  display:inline-block;
+  background: var(--color-secondary);
+  color: var(--color-white);
+  border-radius:12px;
+  padding:4px 12px;
+  font-size: var(--font-size-sm);
+  margin-right:4px;
+}
+
+/* Alerts */
+.alert { padding: var(--space-2); border-radius:6px; margin: var(--space-2) 0; }
+.alert-success { background:#dff9fb; color:#00b894; }
+.alert-error { background:#ffeaa7; color:#d63031; }

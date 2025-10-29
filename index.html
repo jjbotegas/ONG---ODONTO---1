@@ -1,71 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Clínica Sorriso Solidário — ONG Odontológica</title>
-  <meta name="description" content="Clínica Sorriso Solidário — ONG odontológica fundada em 2020. Projetos, voluntariado e doações para promoção da saúde bucal." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONG Odontológica</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header>
-    <nav aria-label="Navegação principal">
-      <a class="logo" href="/">Sorriso Solidário</a>
-      <button id="menu-toggle" aria-expanded="false">Menu</button>
-      <ul id="main-nav" class="nav-list" hidden>
-        <li><a href="/">Início</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="cadastro.html">Cadastre-se</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <h1>Clínica Sorriso Solidário</h1>
-      <p>Promovendo saúde bucal e dignidade desde 2020 — juntos transformamos sorrisos.</p>
-      <a class="btn" href="projetos.html">Conheça nossos projetos</a>
+    <div class="container">
+      <div class="logo">ONG Odontológica</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <section aria-labelledby="sobre" class="sobre">
-      <h2 id="sobre">Quem somos</h2>
-      <p>A Sorriso Solidário é uma ONG odontológica fundada em 2020 com a missão de oferecer atendimento odontológico gratuito a populações vulneráveis, promover educação de saúde bucal e formar voluntários para a prática social.</p>
-      <figure>
-        <img src="assets/images/clinica-entrada.jpg" alt="Fachada da clínica Sorriso Solidário" width="800" height="450">
-        <figcaption>Fachada da nossa clínica — atendimento comunitário.</figcaption>
-      </figure>
-    </section>
+  <section class="hero">
+    <div class="container">
+      <h1>Transformando sorrisos desde 2020</h1>
+      <p>Conectando voluntários, doadores e comunidades com cuidados odontológicos.</p>
+      <a href="cadastro.html" class="btn">Cadastre-se</a>
+    </div>
+  </section>
 
-    <section aria-labelledby="impacto" class="impacto">
-      <h2 id="impacto">Nossos impactos</h2>
-      <ul>
-        <li>Mais de 2.000 atendimentos realizados desde 2020;</li>
-        <li>Campanhas educativas em escolas e centros comunitários;</li>
-        <li>Rede de 120 voluntários treinados.</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="cta" class="cta">
-      <h2 id="cta">Como ajudar</h2>
-      <p>Doe, torne-se voluntário ou compartilhe nossos projetos — cada ação faz diferença.</p>
-      <a class="btn" href="cadastro.html">Quero ajudar</a>
-    </section>
-
-    <section id="contato" aria-labelledby="contato-title" class="contato">
-      <h2 id="contato-title">Contato</h2>
-      <address>
-        <p>Rua Exemplo, 123 — Centro<br>
-        Cidade — Estado<br>
-        <a href="mailto:contato@sorrisosolidario.org">contato@sorrisosolidario.org</a><br>
-        Telefone: (11) 99999-9999</p>
-      </address>
-    </section>
-  </main>
+  <section class="container grid" style="margin-top:32px;">
+    <div class="card grid-column-4">
+      <img src="assets/img/projeto1.webp" alt="Projeto 1" style="width:100%; border-radius:8px;">
+      <h3>Projeto Sorriso Feliz</h3>
+      <p>Atendimentos odontológicos gratuitos para crianças.</p>
+      <span class="tag">Infantil</span>
+    </div>
+    <div class="card grid-column-4">
+      <img src="assets/img/projeto2.webp" alt="Projeto 2" style="width:100%; border-radius:8px;">
+      <h3>Projeto Adulto Sorridente</h3>
+      <p>Tratamentos odontológicos para adultos em comunidades carentes.</p>
+      <span class="tag">Adulto</span>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; <span id="year"></span> Clínica Sorriso Solidário — ONG Odontológica. Todos os direitos reservados.</p>
+    <div class="container">
+      <p>&copy; 2025 ONG Odontológica. Todos os direitos reservados.</p>
+    </div>
   </footer>
 
-  <script src="js/main.js" defer></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

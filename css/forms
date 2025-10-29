@@ -1,0 +1,21 @@
+@import url("variables.css");
+
+form {
+  background: var(--color-white);
+  border-radius:12px;
+  padding: var(--space-4);
+  box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
+
+label { font-weight:500; margin-bottom:8px; display:block; }
+
+input, select {
+  width:100%;
+  padding: var(--space-2);
+  margin-bottom: var(--space-3);
+  border:1px solid var(--color-gray);
+  border-radius:8px;
+  font-size: var(--font-size-md);
+}
+
+input:focus { outline:none; border-color: var(--color-primary); box-shadow:0 0 5px var(--color-primary-light); }
