@@ -1,0 +1,8 @@
+const contatoForm = document.getElementById('contatoForm');
+if(contatoForm){
+  contatoForm.addEventListener('submit', e => {
+    e.preventDefault();
+    alert('Mensagem enviada com sucesso!');
+    contatoForm.reset();
+  });
+}

@@ -3,20 +3,17 @@ const form = document.getElementById('cadastroForm');
 form.addEventListener('submit', function(e) {
   e.preventDefault();
 
-  // Pegando valores
   const nome = form.nome.value.trim();
   const email = form.email.value.trim();
   const cpf = form.cpf.value.trim();
   const telefone = form.telefone.value.trim();
   const nascimento = form.nascimento.value;
 
-  // Validação simples
   if (!nome || !email || !cpf || !telefone || !nascimento) {
     alert('Por favor, preencha todos os campos corretamente.');
     return;
   }
 
-  // Regex básicos
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
     alert('E-mail inválido.');
