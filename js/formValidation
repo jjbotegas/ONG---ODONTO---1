@@ -1,0 +1,40 @@
+const form = document.getElementById('cadastroForm');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  // Pegando valores
+  const nome = form.nome.value.trim();
+  const email = form.email.value.trim();
+  const cpf = form.cpf.value.trim();
+  const telefone = form.telefone.value.trim();
+  const nascimento = form.nascimento.value;
+
+  // Validação simples
+  if (!nome || !email || !cpf || !telefone || !nascimento) {
+    alert('Por favor, preencha todos os campos corretamente.');
+    return;
+  }
+
+  // Regex básicos
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert('E-mail inválido.');
+    return;
+  }
+
+  const cpfRegex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
+  if (!cpfRegex.test(cpf)) {
+    alert('CPF inválido. Use o formato 000.000.000-00');
+    return;
+  }
+
+  const telRegex = /^\(\d{2}\) \d{4,5}-\d{4}$/;
+  if (!telRegex.test(telefone)) {
+    alert('Telefone inválido. Use o formato (00) 00000-0000');
+    return;
+  }
+
+  alert('Cadastro enviado com sucesso!');
+  form.reset();
+});
